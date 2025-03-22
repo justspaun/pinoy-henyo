@@ -1,0 +1,118 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background-color: #6A4C9C;
+    color: black; /* Set default font color to black */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    text-align: center;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.settings-header h1 {
+    font-size: 28px;
+    margin-bottom: 20px;
+    color: black; /* Ensure header is black */
+}
+
+.setting-option {
+    margin: 10px 0;
+    text-align: left;
+    font-size: 18px;
+    color: black; /* Set text color to black for options */
+}
+
+.setting-option label {
+    font-weight: bold;
+    color: black; /* Label color to black */
+}
+
+.time-options {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 10px;
+}
+
+.time-button {
+    background-color: #6A4C9C;
+    color: white;
+    font-size: 18px;
+    padding: 10px 30px;
+    margin: 0 10px;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.time-button:hover {
+    background-color: #6A4C9C;
+}
+
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 34px;
+    height: 20px;
+}
+
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    transition: 0.4s;
+    border-radius: 50px;
+}
+
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 12px;
+    width: 12px;
+    border-radius: 50px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    transition: 0.4s;
+}
+
+input:checked + .slider {
+    background-color: black;
+}
+
+input:checked + .slider:before {
+    transform: translateX(14px);
+}
+
+.back-button {
+    background-color: white;
+    color: black;
+    font-size: 18px;
+    padding: 10px 20px;
+    margin-top: 20px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+}
+
+.back-button:hover {
+    background-color: #f4f4f4;
+}

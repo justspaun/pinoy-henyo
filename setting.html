@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Settings - HENYO MANIA</title>
+    <link rel="stylesheet" href="setting.css">
+</head>
+<body>
+    <div class="container">
+        <div class="settings-header">
+            <h1>Settings</h1>
+        </div>
+        <div class="settings-options">
+            <!-- Time Duration -->
+            <div class="setting-option">
+                <label>Tagal ng Oras:</label>
+                <div class="time-options">
+                    <button class="time-button" id="1min" onclick="setTimeDuration(60)">1 Minuto</button>
+                    <button class="time-button" id="2min" onclick="setTimeDuration(120)">2 Minutos</button>
+                    <button class="time-button" id="3min" onclick="setTimeDuration(180)">3 Minutos</button>
+                </div>
+            </div>
+
+            <!-- Shuffle Word ON/OFF Toggle -->
+            <div class="setting-option">
+                <label for="shuffle-word">Balasahin ang Salita:</label>
+                <label class="switch">
+                    <input type="checkbox" id="shuffle-word" checked>
+                    <span class="slider round"></span>
+                </label>
+            </div>
+            <button class="back-button" onclick="window.location.href='index.html'">Balik</button>
+        </div>
+    </div>
+
+    <script>
+        function setTimeDuration(seconds) {
+            // Store the selected time duration (in seconds)
+            console.log("Time Duration set to: " + seconds + " seconds");
+            // You can store it in localStorage or apply it in your game logic
+        }
+    </script>
+</body>
+</html>
